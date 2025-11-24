@@ -1,0 +1,74 @@
+[RACE]
+method=deposit
+type=Lost Update (Read-Modify-Write)
+threat=HIGH
+
+[RACE]
+method=deposit
+type=Check-Then-Write (Daily Limit)
+threat=HIGH
+
+[RACE]
+method=creditTransfer
+type=Lost Update (Double Balance Mutation)
+threat=HIGH
+
+[RACE]
+method=transferAsync
+type=Thread Interleaving Race
+threat=HIGH
+
+[RACE]
+method=isDailyLimitExceeded
+type=Cache Update Race
+threat=HIGH
+
+[RACE]
+method=sumBalances
+type=Mutable Read Loop
+threat=LOW
+
+[RACE]
+method=applyInterest
+type=Stale Read Modification
+threat=MEDIUM
+
+[RACE]
+method=approveLoan
+type=Check-Then-Call Score Change
+threat=MEDIUM
+
+[RACE]
+method=rebalance
+type=Non-Atomic NAV Update
+threat=MEDIUM
+
+[RACE]
+method=pay
+type=Stale Read After Fraud Check
+threat=HIGH
+
+[RACE]
+method=riskScore
+type=Shared Mutable Field
+threat=HIGH
+
+[RACE]
+method=asyncAudit
+type=Async Logging Race
+threat=LOW
+
+[RACE]
+method=put
+type=Concurrent Map Race
+threat=HIGH
+
+[RACE]
+method=update
+type=Portfolio Lost Update
+threat=MEDIUM
+
+[RACE]
+method=riskScore
+type=Overwritten Score Race
+threat=HIGH

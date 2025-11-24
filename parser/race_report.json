@@ -1,0 +1,66 @@
+[
+    {
+        "file": "../bank/loan/LoanService.java",
+        "method": "applyInterest",
+        "variable": "loan",
+        "description": "Method 'applyInterest' flagged: Lost Update (Read-Modify-Write)",
+        "threat": "HIGH",
+        "type": "Lost Update (Read-Modify-Write)"
+    },
+    {
+        "file": "../bank/investment/MutualFundService.java",
+        "method": "rebalance",
+        "variable": "p",
+        "description": "Method 'rebalance' flagged: Lost Update (Read-Modify-Write)",
+        "threat": "HIGH",
+        "type": "Lost Update (Read-Modify-Write)"
+    },
+    {
+        "file": "../bank/payment/PaymentService.java",
+        "method": "pay",
+        "variable": "acc",
+        "description": "Method 'pay' flagged: Lost Update (Read-Modify-Write)",
+        "threat": "HIGH",
+        "type": "Lost Update (Read-Modify-Write)"
+    },
+    {
+        "file": "../bank/payment/PaymentService.java",
+        "method": "pay",
+        "variable": "cond",
+        "description": "Method 'pay' flagged: Inconsistent Read (Check-Then-Write)",
+        "threat": "HIGH",
+        "type": "Inconsistent Read (Check-Then-Write)"
+    },
+    {
+        "file": "../bank/account/AccountService.java",
+        "method": "deposit",
+        "variable": "acc",
+        "description": "Method 'deposit' flagged: Lost Update (Read-Modify-Write)",
+        "threat": "HIGH",
+        "type": "Lost Update (Read-Modify-Write)"
+    },
+    {
+        "file": "../bank/account/AccountService.java",
+        "method": "deposit",
+        "variable": "cond",
+        "description": "Method 'deposit' flagged: Inconsistent Read (Check-Then-Write)",
+        "threat": "HIGH",
+        "type": "Inconsistent Read (Check-Then-Write)"
+    },
+    {
+        "file": "../bank/account/AccountService.java",
+        "method": "creditTransfer",
+        "variable": "b",
+        "description": "Method 'creditTransfer' flagged: Lost Update (Read-Modify-Write)",
+        "threat": "HIGH",
+        "type": "Lost Update (Read-Modify-Write)"
+    },
+    {
+        "file": "../bank/account/AccountService.java",
+        "method": "creditTransfer",
+        "variable": "cond",
+        "description": "Method 'creditTransfer' flagged: Inconsistent Read (Check-Then-Write)",
+        "threat": "HIGH",
+        "type": "Inconsistent Read (Check-Then-Write)"
+    }
+]
